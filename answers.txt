@@ -1,0 +1,29 @@
+3. How long did it take to run the process for each of these?
+
+a. Running locally
+444.08s user 
+154.53s system 
+11:11.85 total
+
+b. Running via EMR
+Running time was 2799.0s (not counting time spent waiting for the EC2 instances)
+16.54s user 
+45.95s system
+1:10:35.81 total
+
+
+
+4. How many address tags are there in the input?
+
+a. Running locally
+"address"	2042
+
+b. Running via EMR
+"address"	215625
+
+
+
+5. Does the local version and EMR version give the same answer?
+No. The EMR version gives a larger number for time and for address tags because the two parts processed different amounts of data. The EMR version processed more files and therefore took longer and had more address tags.
+
+
